@@ -4,6 +4,7 @@ import lotto.domain.Lotto;
 import lotto.domain.LottoMachine;
 import lotto.domain.WinningLotto;
 import lotto.view.InputView;
+import lotto.view.OutputView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +22,7 @@ public class LottoController {
             lottos.add(lotto);
         }
 
-        //@개를 구매했습니다 + 로또 출력
+        OutputView.lottoView(lottos, price);
 
         List<Integer> winnig = InputView.setWinningNumber();
         int bonusNumber = InputView.setBonusNumber();
