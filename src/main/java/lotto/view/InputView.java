@@ -10,7 +10,8 @@ public class InputView {
 
     public static int setPurchasePrice() {
         System.out.println("구입금액을 입력해 주세요.");
-        return sc.nextInt();
+        String input = sc.nextLine();
+        return Integer.parseInt(input.trim());
     }
 
     public static List<Integer> setWinningNumber() {

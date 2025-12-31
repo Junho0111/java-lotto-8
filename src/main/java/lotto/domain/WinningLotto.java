@@ -4,15 +4,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class WinningLotto {
+    private List<Integer> winningNumbers;
+    private int bonusNumber;
 
-    private List<Integer> winnigLottoList =  new ArrayList<>();
-
-    public WinningLotto(List<Integer> setWinningNumber, int BonusNumber) {
-        setWinningNumber.add(BonusNumber);
-        this.winnigLottoList = setWinningNumber;
+    public WinningLotto(List<Integer> winningNumbers, int bonusNumber) {
+        this.winningNumbers = winningNumbers;
+        this.bonusNumber = bonusNumber;
     }
 
-    public List<Integer> getWinnigLottoList() {
-        return winnigLottoList;
+    public int getWinningNumber(int idx) {
+        return winningNumbers.get(idx);
+    }
+
+    public int getBonusNumber() {
+        return bonusNumber;
     }
 }
