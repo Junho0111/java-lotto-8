@@ -24,11 +24,13 @@ public class InputView {
             numbers.add(Integer.parseInt(part.trim()));
         }
 
+        System.out.println();
         return numbers;
     }
 
     public static int setBonusNumber() {
         System.out.println("보너스 번호를 입력해 주세요.");
+        System.out.println();
         return sc.nextInt();
     }
 }

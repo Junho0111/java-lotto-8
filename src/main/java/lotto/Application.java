@@ -1,7 +1,6 @@
 package lotto;
 
 import lotto.contoller.LottoController;
-import lotto.domain.LottoRankEnum;
 
 public class Application {
     public static void main(String[] args) {
